@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>마음넷</title>
+
+	<style type="text/css">
+
+		@font-face {
+	    font-family: 'Pretendard-Medium';
+	    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+	    font-weight: 500;
+	    font-style: normal;
+	}
+
+		@font-face {
+		    font-family: 'Pretendard-Regular';
+		    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+		    font-weight: 400;
+		    font-style: normal;
+		}
+
+
+	    @font-face {
+	    font-family: 'Pretendard-SemiBold';
+	    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+	    font-weight: 600;
+	    font-style: normal;}
+
+	    @font-face {
+	    font-family: 'neurimboGothicRegular';
+	    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/neurimboGothicRegular.woff2') format('woff2');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+
+	   
+
+ 		h2,h3,h4,h6 {font-family: 'Pretendard-Bold';	}
+		a
+		{text-decoration:none;}
+		section{padding: 80px 0px;}
+
+		ul{margin: 0; padding: 0px 20px;}
+		h1,h2{margin: 0; padding: 0; padding: 130px 0px; text-align: center;}
+		h5{margin: 0; padding: 0; padding: 45px 0px 5px 0px; text-align: center; font-size: 1.3rem;}
+		h3,h6,p{margin: 0; padding: 0; text-align: left;}
+		h4{margin:auto; padding:80px 0px; text-align: center; text-decoration: none;}
+		h1 { padding:300px 0px;
+	    font-family: 'neurimboGothicRegular';
+	    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/neurimboGothicRegular.woff2') format('woff2');
+	    font-weight: normal;
+	    font-style: bold;
+		font-size: 8.5rem;}
+		h2{font-size: 3.1rem; line-height: 1.3;}
+		h3{font-size: 2.3rem; padding: 0px 0px 15px 0px;  line-height: 1.4;}
+		h4{font-size: 1.8rem; padding: 10px 0px 80px 0px; }
+		h6{font-size: 1.3rem; padding: 0px 25px}
+		footer{padding-top: 60px; padding-bottom:0px; line-height: 1.9; background: black; font-size: 0.95rem;}
+		.wrap{width:1000px; margin: auto;}
+		.c{text-align: center; margin: auto; padding: 0; }
+		.h{width:90px; height: 90px;}
+		.bg_b{background: black; color: white}
+		.bg_g{background: grey;}
+		.m{left: -180px; transform: rotate(-40deg); position: relative; z-index: 1;}
+		.mm{width: 600px;}
+		.flex {display: flex; justify-content: space-between; align-items: center;}
+		.flex_cau {display:flex; align-items: center; padding: 0px 0px 30px 0px;}
+		.intro{list-style-type: none; }
+		.intro li b {magring:0; padding:0, text-align: left; font-family: 'Pretendard-Regular';
+			line-height: 1.56; font-size: 1.08rem; color:#C5C5C5; font-weight: normal;}
+		.ul{padding-inline-start: 20px;}
+		.option1{list-style-type: none;}
+		.option1 li b {magring:0; padding:0; text-align: left; font-family: 'Pretendard-Regular';
+			word-break: keep-all; line-height: 1.56; font-size: 1.08rem; color:#C5C5C5; font-weight: normal; padding-bottom: 15px;}
+		.option2{list-style-type: none; }
+		.option2 li b {magring:0; padding:0, text-align: left; font-family: 'Pretendard-Regular'; word-break: keep-all;	line-height: 1.56; font-size: 1.08rem;; font-weight: normal; color:#454545; padding-bottom: 15px;}
+		.option3{list-style-type: none; display: block; display: flex; justify-content: space-between;}
+		.o{margin: auto; text-align: center; padding: 80px 0px 0px 20px; font-size: 1.3rem; font-family: 'Pretendard-Medium';}
+		.oi{width: 410px; height: auto;}
+		.caution{list-style-type: none; justify-content: center;}
+		.yellow{display: inline; background: yellow; font-family: 'Pretendard-SemiBold'}
+		.cc{width: 45px; height: auto;}
+		.why{line-height: 1.57; text-align: center; margin: auto; padding: 40px 0px;}
+		
+		.r{width:200px; height: 200px; display: block; border-radius: 100px;}
+
+
+		.red{color:#CF1818;}
+		.blue{color:#070EB5; }
+		.bold{font-weight: bold;}
+		.white{color: white;}
+		.fa{background:#FAFAFA;}
+		.black{color: black;}
+		.fix{padding:100px 0px; margin: auto; }
+		p{padding: 7px 72px; line-height: 1.5; font-family: 'Pretendard-Regular'}
+		.space{letter-spacing: 18px}
+		.gap{padding-bottom: 35px;}
+		.buy{border:3px solid black; border-radius: 50px; margin:auto; padding: 30px; width: 300px; text-decoration:none; color:black; }
+		.red_effect:hover {color: #CF1818; transition: all 0.7s;}
+		.blue_effect:hover {color: #070EB5; transition: all 0.7s;}
+		.np{padding:0px;}
+		.gap_tb{padding:70px 0px 50px 0px;}
+		.headgap{padding: 210px 0px 210px 0px;}
+
+		.bg_f{background: #FAFAFA; border-radius: 40px; padding: 40px; color: black;}
+		.back {display: block; position: relative; width: 22%;  height: 320px;}
+		.back img{width: 100%; height: auto;}
+		.over {position: absolute; left: 0px; top: 0px; width: 266px; height: auto;}
+
+		.item1:hover .over {display: none}
+		.item2:hover .over {display: none}
+		.item3:hover .over {display: none}
+
+
+
+		@keyframes opacity{
+			0%{opacity: 1;} 50%{opacity: 0;} 100%{opacity: 1;}}
+		.opacity {animation: opacity 1.8s infinite; animation-timing-function: ease-in-out;}
+
+		@keyframes bigger{ 0%{font-size: 2.5rem;} 50%{font-size: 4rem;} 100%{font-size: 4rem;} }
+		.bigger{animation: bigger 2.5s ease-in-out forwards infinite;}
+
+
+
+		@keyframes assemble{ 0%{letter-spacing: 20px;} 35%{letter-spacing: 1.6px;} 100%{letter-spacing: 1.6px;} }
+		.assemble{animation: assemble 2.2s ease-in-out forwards infinite;}
+
+
+		.enlarge{transition: transform 0.5 ease;}
+		.enlarge:hover{transform: scale(1.2);}
+
+		nav{background: white; position: fixed; width: 100%; top:0; padding: 12px 0px 10px 0px; z-index:2; font-family:'neurimboGothicRegular'; font-size: 1.1rem;}
+		.menu {display: flex; padding: 0; justify-content: space-between; width: 400px;}
+		.menu li {list-style-type: none;}
+		.menu li a {text-align: center; display: block; text-decoration: none; font-family:'neurimboGothicRegular'; color: black; }
+		.menu li a:hover {color: lightsalmon;}
+
+
+		.graphic{width: 100%; height: auto; background-size: cover; background-position: center; padding: 60px 0px; overflow: clip; margin: 0;}
+		.logo{font-family:'neurimboGothicRegular'; text-align: center; padding-left: 0px;}
+		.L {background: url('../image/L.png'); width: 15px; height: 15px; display: block;   background-size: cover; padding: 1px 2px 3px 2px;}
+		.R {background: url('../image/R.png'); width: 15px; height: 15px; display: block;   background-size: cover; padding: 1px 2px 3px 2px;}
+		.op{background: url('../image/option.jpg'); width:200px; height: 200px; display: block; background-size: cover;}
+		.line {width: 600px; height: auto; padding-bottom: 0px;}
+		.omg {width: 110px;}
+
+		.hideimage{position: relative;}
+		.hideimage img{position: absolute; top: 0; left: 0; animation: fadeout 3s ease forwards;}
+		@keyframes fadeout {0% {opacity: 1;} 100%{opacity: 0;}}
+
+		.overlap{position: relative;}
+		.overlap img{position: absolute;}
+
+		.title{font-family: 'Pretendard-SemiBold'; font-size: 1.3rem;}
+		.headgif{background-image: url(heart8.gif); background-repeat: repeat; margin: 0;}
+
+
+		div:hover .hide_ear{opacity: 0;}
+		div:hover .hide_neck{opacity: 0;}
+		div:hover .hide_ring{opacity: 0;}
+
+
+	</style>
+
+</head>
+<body>
+	<nav>
+		<div class="wrap flex">
+			<div class="flex omg">
+				<div class="L"></div>
+				<div class="logo">마음넷</div>
+				<div class="R"></div>
+			</div>
+			<ul class="menu">
+				<li> <a href="#pr">사적인</a></li>
+				<li> <a href="#pu">공적인</a></li>
+				<li> <a href="#pl">추가 옵션</a></li>
+				<li> <a href="#buy">구매하기</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="headgif">
+		<div class="headgap"></div>
+	</section>
+
+
+	<section>
+		<div class="wrap">
+			<h2>사랑받고 싶은 마음,<br>
+			인정받고 싶은 마음,</h2>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="wrap">
+			<h2>눈 한 번 <span class="opacity">깜빡</span>이지 않고도<br>
+			상대의 마음을 얻을 수 있는</h2>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="wrap c">
+			<img clas="m_two" src="second.gif"></div>
+		<div class="wrap">
+			<h1> <span class="red">마</span><span class="blue">음</span>넷 </h1>
+		</div>
+	</section>
+
+	<section class="graphic gap c">
+			<img src="../image/fgif.gif" >
+	</section>
+
+	<section>
+		<div class="wrap gap">
+			<h3 class="why"><div class="red_effect np">왜 저 사람한테 끌리지?</div>
+				<div class="blue_effect np">저 사람은 무슨 매력이 있는 거야?</div>
+				<div class="red_effect np">시선이 자꾸 저 사람한테 가는 이유가 뭐야?</div><br>
+				매력 넘치는 사람들의<br>
+				비결이 뭔지 궁금한가요? <br><br>
+				그들만 알고 있던 비밀,<br>
+				마음넷이 알려 줄게요!</h3>
+
+		</div>
+	</section>
+
+	<section class="bg_b">
+		<div class="wrap flex">
+			<ul class="intro">
+				<li>
+				<img class="m" src="first.gif">
+				</li>
+			</ul>
+			<ul class="intro"> 
+				<li class="mm">
+					<a><h3> 이 자석이 500m 이내에 있다면<br>상대방의 마음을 쉽게 얻을 수 있어요! </h3></a>
+					<b>일반 자석은 자력으로 자신과 다른 극성을 끌어당기기만 합니다.<br>
+				그러나 마음넷은 일반 자석과는 다릅니다.<br>
+				마음넷의 자력은 상대방의 마음을 당신의 마음과 다른 극성으로 <br>
+			변환시킨 후 상대방의 마음을 있는 힘껏 끌어당깁니다.</b>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="fix wrap"> 
+		<h2 class="assemble"><span class="red">당신</span>에게 <span class="blue">끌릴 수</span>밖에 없게</h2></div>
+	</section>
+
+	<section id="pr" class="bg_b">
+		<div class="wrap">
+		<h4>01　　사적인 사이에서</h4>
+		</div>
+		<div class="wrap flex">
+			<ul class="option1">
+				<li>
+					<a> <h3>넌 너무 매력적이야! </h3></a>
+					<b>마음넷만 있다면 당신이 어떤 말을 하든 어떤 행동을 하든
+					그 사람은 당신에게 이끌릴 수밖에 없어요. <br>
+					<span class="bold white">마음넷의 자력이 상대방의 마음을 끌어당기니까요!</span> <br>
+					거기다 마음넷의 자기장과 당신의 매력이 더해져 시너지가
+					폭발하여 <br>당신을 더욱 매력적으로 보이게 할 거예요. </b>
+				</li>
+			</ul>
+			<ul class="option1">
+				<li><img class="oi" src="01.png"></li>
+			</ul>
+		</div>
+	</section>
+
+<section id="pu">
+		<div class="wrap">
+		<h4>02　　공적인 사이에서</h4>
+		</div>
+		<div class="wrap flex">
+				<ul class="option2">
+				<li><img class="oi" src="02.png"></li>
+				</ul>
+			<ul class="option2">
+				<li>
+					<a> <h3>당신이 최고예요!</h3></a>
+					<b>당신의 제안보다 매력적인 제안이 세상에 존재할까요?
+						마음넷만 있다면 당신의 사업, 발표, 제안 등 모든 일이 수월하게 풀릴 수밖에 없어요.<br>
+						<span class="bold black">마음넷의 자력이 당신의 파트너 마음을 끌어당기니까요!</span><br>
+						무조건적인 지지로 당신의 꿈을 펼쳐 봐요. </b>
+				</li>
+			</ul>
+		</div>
+</section>
+
+<section id="pl" class="bg_b">  
+ <div class="wrap">
+ 	<h4>자석을 들고 다니기 부담스러운 당신에게</h4>
+ </div>
+ <div class="wrap flex">
+ 	<a class="bg_f back enlarge item1">
+ 		<img src="ear.png">
+ 		<img class="r over" src="../image/ol.jpg">
+ 		<h5>귀걸이</h5>
+ 	</a>
+
+ 	<a class="bg_f back enlarge item2">
+ 		<img src="neck.png">
+ 		<img class="r over" src="../image/ol.jpg">
+ 		<h5>목걸이</h5>
+ 	</a>
+
+ 	<a class="bg_f back enlarge item3">
+ 		<img src="ring.png">
+ 		<img class="r over" src="../image/ol.jpg">
+ 		<h5>반지</h5>
+ 	</a>
+ </div>
+</section>
+
+
+<section id="buy" >
+	<div class="wrap c"> <img class="line" src="line.gif"> </div>
+
+	<div class="wrap gap_tb"><a href="#"><h4 class="buy">구매하기</h4></a></div>
+</section>
+
+
+<section class="fa">
+	<div class="wrap flex_cau">
+		<img class ="cc" src="c.png">
+		<h6> 주의사항 </h6>
+	</div>
+	<div class="wrap">
+		<p class="gap"> 마음넷의 유효 기한은 <span class="yellow">3개월</span>입니다.</p>
+		<p>1)　　당신을 무조건적으로 좋아하다가 자력이 떨어지면 차갑게 돌변할 수 있습니다.<br>
+			　　　3개월 이후에도 마음을 유지하게 만드는 건 구매자의 몫입니다.
+        <p>2)　　무조건적인 동의는 당신의 발전을 해할 수 있습니다.</p>
+        <p>3)　　옵션 제품은 본 제품에 비해 크기가 작으므로 자력 또한 본 제품보다 약합니다.</p>
+      </div>
+</section>
+
+<footer class="bg_b">
+	<div class="wrap flex white">
+	<div> <span class="title">마음넷</span> <br> qnwk@seoultech.ac.kr <br> visual communication design webpublishing <br> &copy;2024. dkwkyoon. all right reserved.</div>
+	<div> <span class="title"></span> </div>
+	<div> <span class="title">고객센터</span> <br> 1004-3071 <br> 14:30~17:03 <br>주말 및 공휴일 휴무 </div>
+	<div> <span class="title">서비스</span> <br>자주 묻는 질문<br>공지사항<br>배송 & 교환/반품  </div>
+	
+	
+</footer>
+
+<footer>
+</footer>
+</body>
+</html>
